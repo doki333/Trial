@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="부산.css" />
+    <title>Busan Museum August Event Booking</title>
+  </head>
+  <body>
+    <h1>August Event List</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>행사코드</th>
+          <th>제목</th>
+          <th>행사날짜</th>
+          <th>행사시간</th>
+          <th>장소</th>
+          <th>참여대상</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3584</td>
+          <td>夜 오늘 한번 놀아보자!</td>
+          <td>18/08/04</td>
+          <td>13:30 ~ 21:30</td>
+          <td>국립부산과학관 정문광장 및 천체투영관 앞 마당</td>
+          <td>누구나</td>
+        </tr>
+        <tr>
+          <td>3595</td>
+          <td>뮤지언스 페스티벌 - 여름밤 미니 콘서트</td>
+          <td>18/08/04</td>
+          <td>토요일</td>
+          <td>국립부산과학관</td>
+          <td>누구나</td>
+        </tr>
+        <tr>
+          <td>3582</td>
+          <td>여름방학 특별강연(8/5) - 나는야 개구리친구</td>
+          <td>18/08/05</td>
+          <td>14:00 ~ 15:00</td>
+          <td>대회의실</td>
+          <td>누구나</td>
+        </tr>
+        <tr>
+          <td>3583</td>
+          <td>여름방학 특별강연(8/12) - 생활 수학이야기</td>
+          <td>18/08/12</td>
+          <td>14:00 ~ 15:00</td>
+          <td>대회의실</td>
+          <td>누구나</td>
+        </tr>
+        <tr>
+          <td>3596</td>
+          <td>IBS 기후 과학자와의 만남(8/18)</td>
+          <td>18/08/18</td>
+          <td>11:00 ~ 12:30</td>
+          <td>상설전시2관 선박관 내 시연실(2층)</td>
+          <td>중고등학생</td>
+        </tr>
+        <tr>
+          <td>3604</td>
+          <td>KITCHEN LAB</td>
+          <td>18/08/24</td>
+          <td>10:30 ~ 11:50 (80분간)</td>
+          <td>3층 교육장 Lab1</td>
+          <td>학부모</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Event Register Form</h2>
+    <form action="">
+      <div>
+        <label for="name">이름</label>
+        <input type="text" id="name" name="participant" required />
+        <label for="age">나이</label>
+        <input type="number" id="age" name="age" max="99" min="1" required />
+        <label for="phonenum">전화번호</label>
+        <input
+          type="tel"
+          id="phonenum"
+          name="phonenum"
+          placeholder="-없이 입력해주세요"
+          required
+        />
+        <label for="email">E-mail</label>
+        <input for="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label>참여행사</label>
+        <select name="event" id="event-selector" required>
+          <option value="">--Please choose an option--</option>
+          <option value="夜놀아보자">夜 오늘 한번 놀아보자!</option>
+          <option value="미니콘서트">
+            뮤지언스 페스티벌 - 여름밤 미니 콘서트
+          </option>
+          <option value="개구리친구">
+            여름방학 특별강연(8/5) - 나는야 개구리친구
+          </option>
+          <option value="생활수학이야기">
+            여름방학 특별강연(8/12) - 생활 수학이야기
+          </option>
+          <option value="기후과학자">IBS 기후 과학자와의 만남(8/18)</option>
+          <option value="KITCHEN LAB">KITCHEN LAB</option>
+        </select>
+      </div>
+      <button>제출</button>
+    </form>
+  </body>
+</html>
