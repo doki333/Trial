@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img
+                    src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              <header class="card-header">
+                <div>
+                  <p class="card-header-title has-text-centered">
+                    Ping Pong Score Keeper
+                    <input
+                      type="text"
+                      id="p1Input"
+                      class="ml-3 input is-primary is-rounded"
+                      placeholder="Player 1"
+                      maxlength="4"
+                    />
+                    <input
+                      type="text"
+                      id="p2Input"
+                      class="ml-3 input is-info is-rounded"
+                      placeholder="Player 2"
+                      maxlength="4"
+                    /><button id="playersNameBtn" class="button is-light ml-3">
+                      Enter
+                    </button>
+                  </p>
+                </div>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <div class="title is-3">
+                    Set Score <span id="p1SetDisplay">0</span> :
+                    <span id="p2SetDisplay">0</span>
+                    <button
+                      id="setBtn"
+                      class="button is-dark is-small mt-2 ml-6"
+                    >
+                      Set Reset
+                    </button>
+                  </div>
+                  <h1 class="title is-1">
+                    <span id="p1Display">0</span> to
+                    <span id="p2Display">0</span>
+                  </h1>
+                  <p class="subtitle">Use the buttons below to keep score</p>
+
+                  <label for="playTo" class="label is-large is-inline"
+                    >Playing To</label
+                  >
+                  <div class="select is-rounded">
+                    <select id="playTo">
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <button
+                  id="p1Button"
+                  class="button card-footer-item is-large is-primary"
+                >
+                  +1 Player One
+                </button>
+                <button
+                  id="p2Button"
+                  class="button card-footer-item is-large is-info"
+                >
+                  +1 Player Two
+                </button>
+                <button
+                  id="playResetBtn"
+                  class="button card-footer-item is-large is-danger"
+                >
+                  Reset
+                </button>
+              </footer>
+            </div>
+
+            <h1><b>Score History</b></h1>
+            <table>
+              <thead id="scoreList">
+                <tr></tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="pingpong.js"></script>
+  </body>
+</html>
